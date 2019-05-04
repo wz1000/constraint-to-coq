@@ -1,0 +1,3 @@
+[submodule "hs-to-coq"]
+	path = hs-to-coq
+	url = https://github.com/wz1000/hs-to-coq
