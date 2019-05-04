@@ -92,7 +92,7 @@ findClass mpkg mn name = do
 
 pluginInit :: TcPluginM (IORef ConstraintState)
 pluginInit = do
-  trigClass <- findClass (Just $ fsLit "haskell-constraint-solver")
+  trigClass <- findClass (Just $ fsLit "constraint-to-coq")
                          (mkModuleName "ExternalProof")
                          (mkTcOcc "Proven")
   eqCls <- findClass (Just $ fsLit "base")
